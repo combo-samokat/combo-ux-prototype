@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="16px / Spasibo">
+<g id="Vector">
+<use xlink:href="#stroke0_0_590" fill="white"/>
+<use xlink:href="#stroke0_0_590" fill="url(#paint0_linear_0_590)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_590" x1="14.9062" y1="1" x2="-0.972945" y2="3.79627" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0BADBF"/>
+<stop offset="0.510417" stop-color="#34C61A"/>
+<stop offset="1" stop-color="#E1EE05"/>
+</linearGradient>
+<path id="stroke0_0_590" d="M8 1C4.14983 1 1 4.14983 1 8V15H8C11.8502 15 15 11.8502 15 8C15 4.14983 11.8502 1 8 1ZM8.05807 11.7332C6.01684 11.7332 4.32491 10.0412 4.32491 8C4.32491 5.95877 6.01684 4.26684 8.05807 4.26684C9.22474 4.26684 10.2744 4.7921 10.9747 5.66667L9.4579 6.89141C9.10773 6.48316 8.64141 6.25 8.05807 6.25C7.06649 6.25 6.30807 7.06649 6.30807 8C6.30807 8.99158 7.12457 9.75 8.05807 9.75C8.58333 9.75 9.10773 9.51684 9.4579 9.04965L11.0328 10.2744C10.3333 11.2079 9.22474 11.7332 8.05807 11.7332Z"/>
+</defs>
+</svg>
