@@ -40,6 +40,14 @@ function animateProgress(count,discount){
 
 let quantities={},likes={},selectionOrder=[];
 try{const saved=JSON.parse(localStorage.getItem('combo-selection-v3')||'{}');quantities=saved.quantities||{};likes=saved.likes||{};selectionOrder=Array.isArray(saved.selectionOrder)?saved.selectionOrder:[];}catch{}
+// A study entry link starts a new selection without affecting cart return visits.
+const studyEntryUrl=new URL(location.href);
+if(studyEntryUrl.searchParams.get('start')==='1'&&location.pathname.endsWith('/'+constructorPage)){
+ quantities={};selectionOrder=[];
+ try{localStorage.setItem('combo-selection-v3',JSON.stringify({quantities,likes,selectionOrder}));}catch{}
+ studyEntryUrl.searchParams.delete('start');
+ history.replaceState(null,'',studyEntryUrl);
+}
 // Discard selections for products removed from the prototype.
 for(const id of Object.keys(quantities))if(!products.some(p=>p.id===Number(id)))delete quantities[id];
 const stockLimits={0:2};
