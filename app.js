@@ -287,12 +287,12 @@ let capsuleFrame=0;
 function syncCapsule(){
  capsuleFrame=0;
  syncCloudHeight();
- const pinnedBottom=88;
+ const pinnedBottom=44;
  const floating=promoAnchor.getBoundingClientRect().bottom<=pinnedBottom;
  nav.classList.toggle('compact',floating);
  if(floating){
   // Keep the category until its last card has left the unobscured viewport.
-  const activationLine=192;
+  const activationLine=148;
   const sections=[...document.querySelectorAll('[data-section]')];
   const visible=sections.find(section=>section.querySelector('.grid').getBoundingClientRect().bottom>activationLine)||sections.at(-1);
   const visibleCategory=visible.dataset.section;
